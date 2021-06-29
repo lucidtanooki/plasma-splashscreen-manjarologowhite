@@ -33,10 +33,10 @@ Image {
 
             anchors.centerIn: parent
 
-            source: "images/manjarologo.png"
+            source: "images/manjarologo.svg"
 
-            sourceSize.width: 403
-            sourceSize.height: 99
+            sourceSize.width: 254
+            sourceSize.height: 50
         }
 
         Image {
@@ -44,9 +44,9 @@ Image {
             //in the middle of the remaining space
             y: parent.height - (parent.height - logo.y) / 2 - height/2
             anchors.horizontalCenter: parent.horizontalCenter
-            source: "images/busy01.svg"
-            sourceSize.height: units.gridUnit * 3
-            sourceSize.width: units.gridUnit * 3
+            source: "images/busy.svg"
+            sourceSize.height: units.gridUnit * 2
+            sourceSize.width: units.gridUnit * 2
             RotationAnimator on rotation {
                 id: rotationAnimator
                 from: 0
